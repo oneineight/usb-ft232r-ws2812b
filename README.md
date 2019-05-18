@@ -22,17 +22,17 @@ The 24 bits (3 bytes) of colour data for each WS2812B device (8 bits red, 8 bits
 
 FT232R characters are transmitted LSB first (ie right to left in diagram below)
 
-  (0) c 1 0 b 1 0 a (1) 
+    (0) c 1 0 b 1 0 a (1) 
 
 Digits in brackets are the fixed start and stop bits. a, b & c are the WS2812B data bits.
 
 For example, to transmit three WS2812B '0' bits we use
 
-  (0) 0 1 0 0 1 0 0 (1)
+    (0) 0 1 0 0 1 0 0 (1)
 
 but the TX line has been inverted so the data bits need to be inverted (we've already accounted for the start and stop bits being inverted) so the character sent is
 
-  1011011 = 0x5B = 91 (decimal)
+    1011011 = 0x5B = 91 (decimal)
 
 Sending 8 of these characters will be received by the WS2812B as 8 * 3 = 24 bits of colour data. As they are all 0 the LED will be off.
 
