@@ -1,7 +1,7 @@
 # usb-ft232r-ws2812b
 Proof of concept code to drive ws2812b RGB LEDs (NeoPixels) over USB with FTDI FT232R serial adaptor.
 
-![FT232R](https://github.com/oneineight/usb-ft232r-ws2812b/raw/master/FT232R.jpeg "FT232R")
+![FT232R](https://github.com/oneineight/usb-ft232r-ws2812b/raw/master/FT232R.jpg "FT232R")
 ![WS2812B](https://github.com/oneineight/usb-ft232r-ws2812b/raw/master/WS2812B.jpg "WS2812B")
 
 This allows a desktop/laptop/tablet/phone with a USB port to drive a strip/ring/etc of WS2812B devices rather than a microcontroller with UART/SPI/GPIO etc. Be careful not to overload your USB  port - some WS2812B can sink about 60 mA when set to full brightness white so don't power a long strip from USB.
